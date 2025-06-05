@@ -1,0 +1,26 @@
+[project]
+name = "devicetypes"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "jeffry", email = "182467653@qq.com" }
+]
+dependencies = [
+    "pydantic>=2.11.5",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["devicetypes"]
