@@ -1,0 +1,254 @@
+{
+    "organization": "Acme Corp",
+    "project_name": "New Beijing Campus Office",
+    "site": {
+      "site_name": "AsiaCentral",
+      "site_code": {
+        "site_code": "CNPEK01",
+        "country_code": "CN",
+        "city_name": "Beijing",
+        "alias": "北京",
+        "dns_server": [
+          "223.5.5.5",
+          "223.6.6.6"
+        ],
+        "ntp_server": [
+          "114.118.7.161",
+          "203.107.6.88"
+        ],
+        "timezone": "Asia/Shanghai"
+      },
+      "address": "Beijing, China, Qianmen",
+      "latitude": "39.9042",
+      "longitude": "116.4074",
+      "contact": [
+        {
+          "name": "John Doe",
+          "avatar": "https://example.com/avatar.jpg",
+          "role": "IT Manager",
+          "email": "john.doe@example.com",
+          "phone": "123-456-7890"
+        }
+      ]
+    },
+    "network_intend": [
+      {
+        "B1-F03-M": {
+          "tier": 3,
+          "parent": null,
+          "effective_network_intend": {
+            "capacity": {
+              "user_count": 5000,
+              "device_density": "medium",
+              "per_user_wired_intranet_bandwidth": "300Mbps",
+              "per_user_wireless_intranet_bandwidth": "80Mbps",
+              "per_user_internet_bandwidth": "20Mbps",
+              "concurrent_users_ratio": 0.1
+            },
+            "service": {
+              "wifi_coverage": "full",
+              "wired_access": true,
+              "wired_access_coverage_ratio": 0.8,
+              "voice": true,
+              "iot_support": [
+                "printer",
+                "camera",
+                "door_access",
+                "security_system",
+                "energy_management",
+                "video_conferencing"
+              ]
+            },
+            "device_role_redundancy": {
+              "firewall": true,
+              "east_west_firewall": true,
+              "core_switch": true,
+              "distribution_switch": true,
+              "access_switch": false,
+              "wireless_controller": true,
+              "wireless_switch": true,
+              "iot_switch": false,
+              "server_switch": true,
+              "wireless_ap": false
+            },
+            "security": {
+              "segmentation": true,
+              "guest_network": true,
+              "firewall_required": true
+            },
+            "design_preferences": {
+              "firewall_vendor": "fortinet",
+              "switch_vendor": "cisco",
+              "wireless_vendor": "aruba",
+              "access_model": "3-tier",
+              "wired_ip_strategy": "per-floor-subnet",
+              "scalability": true
+            }
+          },
+          "network_intend_hash": "d54787fbb58987a9abb5c8386f66d51c"
+        },
+        "B2-F03-M": {
+          "tier": 2,
+          "parent": "B1-F03-M",
+          "effective_network_intend": {
+            "capacity": {
+              "user_count": 5000,
+              "device_density": "medium",
+              "per_user_wired_intranet_bandwidth": "300Mbps",
+              "per_user_wireless_intranet_bandwidth": "80Mbps",
+              "per_user_internet_bandwidth": "20Mbps",
+              "concurrent_users_ratio": 0.1
+            },
+            "service": {
+              "wifi_coverage": "full",
+              "wired_access": true,
+              "wired_access_coverage_ratio": 0.8,
+              "voice": true,
+              "iot_support": [
+                "printer",
+                "camera",
+                "door_access",
+                "security_system",
+                "energy_management",
+                "video_conferencing"
+              ]
+            },
+            "device_role_redundancy": {
+              "firewall": true,
+              "east_west_firewall": true,
+              "core_switch": true,
+              "distribution_switch": true,
+              "access_switch": false,
+              "wireless_controller": true,
+              "wireless_switch": true,
+              "iot_switch": false,
+              "server_switch": true,
+              "wireless_ap": false
+            },
+            "security": {
+              "segmentation": true,
+              "guest_network": true,
+              "firewall_required": true
+            },
+            "design_preferences": {
+              "firewall_vendor": "fortinet",
+              "switch_vendor": "cisco",
+              "wireless_vendor": "aruba",
+              "access_model": "3-tier",
+              "wired_ip_strategy": "per-floor-subnet",
+              "scalability": true
+            }
+          },
+          "network_intend_hash": "d54787fbb58987a9abb5c8386f66d51c"
+        },
+        "B2-F02-I": {
+          "tier": 1,
+          "parent": "B2-F03-M",
+          "effective_network_intend": {
+            "capacity": {
+              "user_count": 5000,
+              "device_density": "medium",
+              "per_user_wired_intranet_bandwidth": "300Mbps",
+              "per_user_wireless_intranet_bandwidth": "80Mbps",
+              "per_user_internet_bandwidth": "20Mbps",
+              "concurrent_users_ratio": 0.1
+            },
+            "service": {
+              "wifi_coverage": "full",
+              "wired_access": true,
+              "wired_access_coverage_ratio": 0.8,
+              "voice": true,
+              "iot_support": [
+                "printer",
+                "camera",
+                "door_access",
+                "security_system",
+                "energy_management",
+                "video_conferencing"
+              ]
+            },
+            "device_role_redundancy": {
+              "firewall": true,
+              "east_west_firewall": true,
+              "core_switch": true,
+              "distribution_switch": true,
+              "access_switch": false,
+              "wireless_controller": true,
+              "wireless_switch": true,
+              "iot_switch": false,
+              "server_switch": true,
+              "wireless_ap": false
+            },
+            "security": {
+              "segmentation": true,
+              "guest_network": true,
+              "firewall_required": true
+            },
+            "design_preferences": {
+              "firewall_vendor": "fortinet",
+              "switch_vendor": "cisco",
+              "wireless_vendor": "aruba",
+              "access_model": "3-tier",
+              "wired_ip_strategy": "per-floor-subnet",
+              "scalability": true
+            }
+          },
+          "network_intend_hash": "d54787fbb58987a9abb5c8386f66d51c"
+        },
+        "B2-F01-I": {
+          "tier": 1,
+          "parent": "B2-F03-M",
+          "effective_network_intend": {
+            "capacity": {
+              "user_count": 800,
+              "device_density": "medium",
+              "per_user_wired_intranet_bandwidth": "300Mbps",
+              "per_user_wireless_intranet_bandwidth": "80Mbps",
+              "per_user_internet_bandwidth": "20Mbps",
+              "concurrent_users_ratio": 0.1
+            },
+            "service": {
+              "wifi_coverage": "full",
+              "wired_access": true,
+              "wired_access_coverage_ratio": 0.8,
+              "voice": true,
+              "iot_support": [
+                "printer",
+                "camera",
+                "door_access",
+                "security_system",
+                "energy_management",
+                "video_conferencing"
+              ]
+            },
+            "device_role_redundancy": {
+              "firewall": true,
+              "east_west_firewall": true,
+              "core_switch": true,
+              "distribution_switch": true,
+              "access_switch": true,
+              "wireless_controller": true,
+              "wireless_switch": true,
+              "iot_switch": false,
+              "server_switch": true,
+              "wireless_ap": false
+            },
+            "security": {
+              "segmentation": true,
+              "guest_network": true,
+              "firewall_required": true
+            },
+            "design_preferences": {
+              "firewall_vendor": "fortinet",
+              "switch_vendor": "cisco",
+              "wireless_vendor": "aruba",
+              "access_model": "3-tier",
+              "wired_ip_strategy": "per-floor-subnet",
+              "scalability": true
+            }
+          },
+          "network_intend_hash": "20cea73d9a83c38a2db44373776ac17a"
+        }
+      }
+    ]
+  }

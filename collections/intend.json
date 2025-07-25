@@ -1,0 +1,153 @@
+{
+    "site": {
+        "site_code": "CNPEK01",
+        "site_name": "Beijing",
+        "country_code": "CN",
+        "city_name": "Beijing",
+        "alias": "北京",
+        "dns_server": [
+            "8.8.8.8",
+            "8.8.4.4"
+        ],
+        "ntp_server": [
+            "216.239.35.0",
+            "20.189.79.72"
+        ],
+        "timezone": "Asia/Shanghai"
+    },
+    "network_hierarchy": [
+        {
+            "root_node": true,
+            "name": "B1-F03-M",
+            "tier": 3,
+            "parent": null,
+            "children": [
+                {
+                    "name": "B2-F03-M",
+                    "tier": 2,
+                    "parent": "B1-F03-M",
+                    "children": [
+                        {
+                            "name": "B2-F02-I",
+                            "tier": 1,
+                            "parent": "B2-F03-M",
+                            "children": []
+                        },
+                        {
+                            "name": "B2-F01-I",
+                            "tier": 1,
+                            "parent": "B2-F03-M",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "name": "B3-F03-M",
+                    "tier": 2,
+                    "parent": "B1-F03-M",
+                    "children": [
+                        {
+                            "name": "B3-F02-I",
+                            "tier": 1,
+                            "parent": "B3-F03-M",
+                            "children": []
+                        },
+                        {
+                            "name": "B3-F01-I",
+                            "tier": 1,
+                            "parent": "B3-F03-M",
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "network_intend": {
+        "capacity": {
+            "user_count": 5000,
+            "user_density": "medium",
+            "per_user_wired_intranet_bandwidth": "300Mbps",
+            "per_user_wireless_intranet_bandwidth": "80Mbps",
+            "per_user_internet_bandwidth": "20Mbps",
+            "concurrent_users_ratio": 0.1
+        },
+        "service": {
+            "wifi_coverage": "full",
+            "wired_access": true,
+            "wired_access_coverage_ratio": 0.8,
+            "voice": true,
+            "iot_support": [
+                "printer",
+                "camera",
+                "door_access",
+                "security_system",
+                "energy_management",
+                "video_conferencing"
+            ]
+        },
+        "device_role_redundancy": {
+            "firewall": true,
+            "east_west_firewall": true,
+            "core_switch": true,
+            "distribution_switch": true,
+            "access_switch": false,
+            "wireless_controller": true,
+            "wireless_switch": true,
+            "iot_switch": false,
+            "server_switch": true,
+            "wireless_ap": false
+        },
+        "security": {
+            "segmentation": true,
+            "guest_network": true,
+            "firewall_required": true,
+            "compliance_standard": [
+                "ISO27001",
+                "PCI-DSS"
+            ],
+            "access_control": {
+                "wired_8021x": true,
+                "wireless_8021x": true,
+                "mac_auth_bypass": false
+            }
+        },
+        "design_preferences": {
+            "firewall_vendor": "fortinet",
+            "switch_vendor": "cisco",
+            "wireless_vendor": "aruba",
+            "access_model": "3-tier",
+            "wired_ip_strategy": "per-floor-subnet",
+            "scalability": true
+        },
+        "wireless": {
+            "deployment_mode": "centralized/distributed/cloud"
+        },
+        "ip_strategy": {
+            "private_cidr": "10.0.0.0/8",
+            "dhcp_strategy": "relay/local",
+            "wired_ip_strategy": "per-floor-subnet",
+            "wireless_ip_strategy": "pool/per-bussiness-subnet"
+        },
+        "vlan_strategy": {
+            "device_management_vlan": [
+                30,
+                40
+            ],
+            "ap_management_vlan": [
+                31,
+                41
+            ]
+        },
+        "operation": {
+            "snmp_enabled": true,
+            "snmp_config": {},
+            "syslog_enabled": true,
+            "syslog_config": {},
+            "telemetry_enabled": true,
+            "telemetry_config": {},
+            "ssh_enabled": true,
+            "ssh_config": {}
+        }
+    }
+}
